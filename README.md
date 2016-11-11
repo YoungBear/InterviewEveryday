@@ -2,3 +2,5 @@
 [ArrayList和LinkedList的区别](https://github.com/YoungBear/InterviewEveryday/blob/master/ArrayList_LinkedList.md)
 
 [Integer的自动装箱拆箱](https://github.com/YoungBear/InterviewEveryday/blob/master/IntegerAutoboxing.md)
+
+[Java中的String](https://github.com/YoungBear/InterviewEveryday/blob/master/StringLearn.md)
