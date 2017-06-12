@@ -72,6 +72,10 @@ public static int func() {
 
 如果没有异常出现，而且finally语句中没有return，则会执行try里边的return，并且，会将变量暂存起来(对象存的是引用的地址)，再去执行finally中的语句，这时候，如果返回值是基本数据类型或者字符串，则finally相当于更改副本，不会对暂存值有影响；但是，如果返回值是对象，则finally中的语句，仍会根据地址的副本，改变原对象的值。所以上边的例子，返回值的age为50。
 
+## 测试代码地址:
+
+https://github.com/YoungBear/InterviewEveryday/blob/master/InterviewExperiment/src/com/interview/inherit/FinallyReturnTest.java
+
 参考：
 
 http://blog.csdn.net/zhumintao/article/details/53818972
