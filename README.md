@@ -1,5 +1,7 @@
 #每天一道面试题系列
 
+[Java 覆盖与隐藏](https://github.com/YoungBear/InterviewEveryday/blob/master/md_files/OverrideAndHide.md "")
+
 [Java 反射机制](https://github.com/YoungBear/InterviewEveryday/blob/master/md_files/ReflectLearn.md "")
 
 [try-catch-finally 与返回值的修改](https://github.com/YoungBear/InterviewEveryday/blob/master/md_files/FinallyReturn.md "")

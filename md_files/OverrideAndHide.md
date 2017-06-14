@@ -22,3 +22,7 @@
 题目链接：
 
 https://www.nowcoder.com/questionTerminal/6080d0e94cee4ce5952064f96f2b1650
+
+测试代码:
+
+https://github.com/YoungBear/InterviewEveryday/tree/master/InterviewExperiment/src/com/interview/inherit/pratice20170614
