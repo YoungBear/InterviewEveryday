@@ -1,4 +1,4 @@
-#Static 方法
+# Static 方法
 
 阅读如下代码。 请问，对语句行 test.hello(). 描述正确的有（）
 
@@ -32,7 +32,7 @@ public class TestHello {
 ```
 
 正确答案是A，能编译通过，并正确运行。
-##解析：
+## 解析：
 
 
 因为TestHello类的hello方法是静态的，所以是属于类的，当实例化该类的时候，静态会被优先加载而且只加载一次，所以不受实例化new TestHello();影响，只要是使用到了TestHello类，都会加载静态hello方法！

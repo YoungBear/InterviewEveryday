@@ -1,4 +1,4 @@
-#Integer的自动装箱拆箱
+# Integer的自动装箱拆箱
 
 先看一道题：
 
@@ -30,7 +30,7 @@ equals()比较的是两个对象的值(内容)是否相同。
 
 这儿涉及到java的自动装箱(autoboxing)和自动拆箱(unboxing)，那么什么是自动装箱拆箱呢？
 
-##什么是自动装箱拆箱
+## 什么是自动装箱拆箱
 基本数据类型的自动装箱、拆箱是自J2SE 5.0开始提供的功能。
 
 一般我们要创建一个类的对象实例的时候，我们会这样：
@@ -54,7 +54,7 @@ Integer i = 10;//装箱
 int t = i;//拆箱，实际上执行了 int t = i.intValue();
 ```
 
-##Integer的自动装箱
+## Integer的自动装箱
 
 由于Integer的自动装箱会调用`Integer valueOf(int i)`函数，那么就看一下它的源代码：
 
@@ -77,7 +77,7 @@ Integer i4 =new Integer(100);
 System.out.println("i3 == i4: "+(i3 == i4));//显示false
 ```
 
-##Integer自动装箱拆箱总结
+## Integer自动装箱拆箱总结
 
 自动装箱调用：`Integer.valueOf(int n);`
 

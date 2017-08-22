@@ -1,13 +1,13 @@
-#String 学习笔记
+# String 学习笔记
 
-##String是final类型的，所以String不能被继承
+## String是final类型的，所以String不能被继承
 
-##String.intern()：
+## String.intern()：
 　　**<font color=red>如果字符串常量池中已经包含一个等于此String对象的字符串，则返回代表池中这个字符串的String对象；否则，将此String对象包含的字符串添加到常量池中，并且返回此String对象的引用。</font>**
 
 *注：“==” 比较的是两个对象的引用(内存地址)是否相同*
 
-###采用new 创建的字符串对象，不会进入字符串常量池
+### 采用new 创建的字符串对象，不会进入字符串常量池
 ```
         String a = "abc";
         String b = new String("abc");
@@ -21,7 +21,7 @@
 - 由于字符串常量池中已经有"abc"了，所以a.intern()返回的是字符串常量池中的该字符串的引用，所以会有b.intern() == a 为true。
 - 引用c也指向字符串常量池中的"abc"，所以a == c 为true。
 
-###字符串相加的时候，都是静态字符串的结果会添加到字符串常量池，如果其中包含变量，则不会进入字符串常量池
+### 字符串相加的时候，都是静态字符串的结果会添加到字符串常量池，如果其中包含变量，则不会进入字符串常量池
 ```
         String a = "abcd";
         String b = "ab" + "cd";
