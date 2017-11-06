@@ -11,6 +11,21 @@ public class FinallyReturnTest {
 
         System.out.println("************************************************");
 
+        int resultGetNum = getNumber();
+        System.out.println("resultGetNum: " + resultGetNum);
+
+        System.out.println("************************************************");
+
+        try {
+            int resultGetNum1 = getNumber(0);
+            System.out.println("resultGetNum1: " + resultGetNum1);
+            System.out.println("************************************************");
+        }catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("resultGetNum1: " + e.getLocalizedMessage());
+        }
+
+
         String resultStr = funcStr();
         System.out.println("resultStr: " + resultStr);
 
@@ -31,6 +46,48 @@ public class FinallyReturnTest {
             return result;
         } finally {
             result = 3;
+        }
+    }
+
+    /**
+     * finally中的return语句会覆盖try和catch中的return语句
+     * @return
+     */
+    public static int getNumber() {
+        int num = 0;
+        try {
+            int result = 2 / num;
+            return result;
+        } catch (Exception exception) {
+            return 0;
+        } finally {
+            if (num == 0) {
+                return -1;
+            } else if (num == 1) {
+                return 1;
+            }
+        }
+    }
+
+    /**
+     * finally中的return语句会覆盖try和catch中的return语句
+     * @return
+     */
+    public static int getNumber(int num) {
+        try {
+            if (num == 0) {
+                throw new ArithmeticException("ArithmeticException try");
+            }
+            int result = 2 / num;
+            return result;
+        } catch (Exception exception) {
+            throw new ArithmeticException("ArithmeticException catch");
+        } finally {
+            if (num == 0) {
+                throw new ArithmeticException("ArithmeticException finally 0");
+            } else if (num == 1) {
+                throw new ArithmeticException("ArithmeticException finally 1");
+            }
         }
     }
 
